@@ -10,6 +10,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <!-- Iconos -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        :root {
+            --bg-dark: #0f1115;
+            --accent: #818cf8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: #d1d5db;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .glass-card:hover {
+            border-color: rgba(129, 140, 248, 0.3);
+            transform: translateY(-4px);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .progress-line {
+            transition: width 1.2s ease-in-out;
+        }
+
+        /* Scrollbar discreto */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #0f1115; }
+        ::-webkit-scrollbar-thumb { background: #31313a; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #818cf8; }
+    </style>
 </head>
 <body class="selection:bg-indigo-500/30">
 
@@ -54,7 +99,7 @@
                 <h2 class="text-sm font-bold text-indigo-400 uppercase tracking-widest mb-4">¿Quién soy?</h2>
                 <h3 class="text-3xl font-bold text-white mb-6">Un técnico en proceso que no se queda quieto.</h3>
                 <p class="text-slate-400 leading-relaxed mb-6">
-                    Estoy terminando el grado medio de <strong>Sistemas Microinformáticos y Redes</strong>. Me mola entender cómo funcionan las cosas de verdad y buscar formas de hacer las tareas más fáciles usando tecnología.
+                    Estoy terminando el grado medio de <strong>Sistemas Microinformáticos y Redes.</strong>. Me mola entender cómo funcionan las cosas de verdad y buscar formas de hacer las tareas más fáciles usando tecnología.
                 </p>
                 <p class="text-slate-400 leading-relaxed">
                     Últimamente me he metido en el mundo de la <strong>automatización (n8n)</strong>. Todavía soy novato, pero ya estoy experimentando creando mis propios agentes de IA para ver hasta dónde se puede llegar.
