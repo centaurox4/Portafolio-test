@@ -3,266 +3,197 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Andrés Yida Ji Lin</title>
-    <!-- Tailwind CSS para diseño rápido y moderno -->
+    <title>Andrés Yida | Sistemas y Automatización</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
-    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
     <!-- Iconos -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="overflow-x-hidden">
+<body class="selection:bg-indigo-500/30">
 
-    <!-- NAVEGACIÓN -->
-    <nav class="fixed top-0 w-full z-50 glass border-b border-white/5 py-4">
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-            <div class="text-xl font-extrabold tracking-tighter text-white">ANDRÉS<span class="text-indigo-500">YIDA</span></div>
-            
-            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
-                <a href="#inicio" class="hover:text-indigo-400 transition-colors">Inicio</a>
-                <a href="#sobre-mi" class="hover:text-indigo-400 transition-colors">Sobre Mí</a>
-                <a href="#habilidades" class="hover:text-indigo-400 transition-colors">Habilidades</a>
+    <!-- NAV SIMPLIFICADO -->
+    <nav class="fixed top-0 w-full z-50 bg-[#0f1115]/80 backdrop-blur-md border-b border-white/5 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="#inicio" class="text-lg font-bold text-white tracking-tight">ANDRÉS<span class="text-indigo-400">YIDA</span></a>
+            <div class="hidden sm:flex gap-8 text-sm font-medium">
+                <a href="#sobre-mi" class="hover:text-indigo-400 transition-colors">Sobre mí</a>
                 <a href="#experiencia" class="hover:text-indigo-400 transition-colors">Experiencia</a>
-                <a href="#contacto" class="hover:text-indigo-400 transition-colors">Contacto</a>
+                <a href="#contacto" class="text-indigo-400 font-bold">Contacto</a>
             </div>
-
-            <a href="#contacto" class="px-5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-bold rounded-full transition-all">
-                Hablemos
-            </a>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section id="inicio" class="relative min-h-screen flex items-center justify-center px-6 pt-20">
-        <div class="absolute inset-0 -z-10">
-            <div class="absolute top-1/4 left-1/4 w-64 md:w-96 h-64 md:h-96 bg-indigo-600/20 rounded-full blur-[120px] animate-pulse"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-64 md:w-96 h-64 md:h-96 bg-purple-600/20 rounded-full blur-[120px] animate-pulse"></div>
-        </div>
-
-        <div class="max-w-4xl text-center">
-            <span class="inline-block px-4 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-xs font-bold uppercase tracking-widest mb-6">
-                Buscando primer empleo / prácticas
-            </span>
-            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-tight text-white">
-                Andrés <span class="text-gradient">Yida Ji Lin</span>
+    <!-- HERO -->
+    <section id="inicio" class="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-indigo-500/10 via-transparent to-transparent -z-10"></div>
+        
+        <div class="max-w-3xl text-center">
+            <h1 class="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight">
+                Hola, soy Andrés.
             </h1>
-            <p class="text-xl md:text-2xl text-slate-400 font-medium mb-10 max-w-2xl mx-auto leading-relaxed">
-                Técnico en Sistemas Microinformáticos y Redes. <span class="text-slate-200">Apasionado por el soporte técnico, la gestión de infraestructuras y el hardware.</span>
+            <p class="text-xl md:text-2xl text-slate-400 leading-relaxed mb-8">
+                Estudiante de 2º de SMR. Me gusta trastear con equipos, montar redes y estoy aprendiendo a <span class="text-white border-b-2 border-indigo-500">automatizar cosas con IA.</span>
             </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="#experiencia" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl font-bold flex items-center gap-2 transition-all">
-                    Ver experiencia <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                <a href="#sobre-mi" class="px-6 py-3 bg-white text-black font-bold rounded-lg hover:bg-indigo-100 transition-all">
+                    Conóceme un poco más
                 </a>
-                <a href="mailto:aandresyida08@gmail.com" class="px-8 py-4 glass hover:bg-white/10 text-white rounded-xl font-bold transition-all">
-                    Enviar Email
+                <a href="#contacto" class="px-6 py-3 border border-white/10 hover:bg-white/5 rounded-lg font-bold transition-all">
+                    Hablamos?
                 </a>
             </div>
         </div>
     </section>
 
     <!-- SOBRE MÍ -->
-    <section id="sobre-mi" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div class="reveal relative aspect-square rounded-3xl overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800" alt="Tecnología y sistemas" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
-                <div class="absolute inset-0 border-[12px] border-indigo-600/10 pointer-events-none"></div>
-            </div>
-            <div class="reveal">
-                <h2 class="text-indigo-500 font-bold mb-4 flex items-center gap-2">
-                    <i data-lucide="user" class="w-5 h-5"></i> SOBRE MÍ
-                </h2>
-                <h3 class="text-4xl font-bold mb-6 text-white">Técnico Junior con visión proactiva</h3>
-                <p class="text-lg text-slate-400 leading-relaxed mb-8">
-                    Actualmente curso el 2º año de <strong>Sistemas Microinformáticos y Redes (SMR)</strong>. Me considero una persona con gran capacidad de aprendizaje, actitud proactiva y facilidad para el trabajo en equipo. Busco una oportunidad para aplicar mis conocimientos técnicos y seguir creciendo profesionalmente en el sector IT.
+    <section id="sobre-mi" class="py-20 px-6 max-w-5xl mx-auto">
+        <div class="reveal grid md:grid-cols-5 gap-12 items-start">
+            <div class="md:col-span-2">
+                <h2 class="text-sm font-bold text-indigo-400 uppercase tracking-widest mb-4">¿Quién soy?</h2>
+                <h3 class="text-3xl font-bold text-white mb-6">Un técnico en proceso que no se queda quieto.</h3>
+                <p class="text-slate-400 leading-relaxed mb-6">
+                    Estoy terminando el grado medio de <strong>Sistemas Microinformáticos y Redes</strong>. Me mola entender cómo funcionan las cosas de verdad y buscar formas de hacer las tareas más fáciles usando tecnología.
                 </p>
-                <div class="grid grid-cols-2 gap-6 mb-8 text-sm">
-                    <div class="flex items-center gap-3 text-slate-300">
-                        <i data-lucide="monitor" class="text-indigo-500 w-5 h-5"></i> Hardware & Software
+                <p class="text-slate-400 leading-relaxed">
+                    Últimamente me he metido en el mundo de la <strong>automatización (n8n)</strong>. Todavía soy novato, pero ya estoy experimentando creando mis propios agentes de IA para ver hasta dónde se puede llegar.
+                </p>
+            </div>
+
+            <div class="md:col-span-3 space-y-6">
+                <h2 class="text-sm font-bold text-slate-500 uppercase tracking-widest mb-4 text-center md:text-left">Lo que manejo ahora mismo</h2>
+                
+                <!-- Skill Hardware -->
+                <div class="glass-card p-5 rounded-xl">
+                    <div class="flex justify-between mb-2 items-center">
+                        <span class="flex items-center gap-3 text-white font-semibold">
+                            <i data-lucide="wrench" class="w-4 h-4 text-indigo-400"></i> Hardware y Montaje
+                        </span>
+                        <span class="text-xs text-slate-500">Nivel medio</span>
                     </div>
-                    <div class="flex items-center gap-3 text-slate-300">
-                        <i data-lucide="network" class="text-indigo-500 w-5 h-5"></i> Redes & Sistemas
+                    <div class="h-1.5 bg-white/5 rounded-full">
+                        <div class="progress-line h-full bg-indigo-500 rounded-full" style="width: 0%" data-target="70%"></div>
                     </div>
-                    <div class="flex items-center gap-3 text-slate-300">
-                        <i data-lucide="headphones" class="text-indigo-500 w-5 h-5"></i> Soporte Técnico
+                </div>
+
+                <!-- Skill Redes Locales -->
+                <div class="glass-card p-5 rounded-xl">
+                    <div class="flex justify-between mb-2 items-center">
+                        <span class="flex items-center gap-3 text-white font-semibold">
+                            <i data-lucide="network" class="w-4 h-4 text-indigo-400"></i> Redes Locales y Cableado
+                        </span>
+                        <span class="text-xs text-slate-500">Nivel medio</span>
                     </div>
-                    <div class="flex items-center gap-3 text-slate-300">
-                        <i data-lucide="clipboard-list" class="text-indigo-500 w-5 h-5"></i> Gestión de Inventario
+                    <div class="h-1.5 bg-white/5 rounded-full">
+                        <div class="progress-line h-full bg-indigo-500 rounded-full" style="width: 0%" data-target="60%"></div>
                     </div>
+                </div>
+
+                <!-- Skill Software/SO -->
+                <div class="glass-card p-5 rounded-xl">
+                    <div class="flex justify-between mb-2 items-center">
+                        <span class="flex items-center gap-3 text-white font-semibold">
+                            <i data-lucide="monitor" class="w-4 h-4 text-indigo-400"></i> Sistemas Operativos (Win/Linux)
+                        </span>
+                        <span class="text-xs text-slate-500">Nivel medio</span>
+                    </div>
+                    <div class="h-1.5 bg-white/5 rounded-full">
+                        <div class="progress-line h-full bg-indigo-500 rounded-full" style="width: 0%" data-target="65%"></div>
+                    </div>
+                </div>
+
+                <!-- Skill n8n/IA -->
+                <div class="glass-card p-5 rounded-xl border-l-2 border-l-indigo-500">
+                    <div class="flex justify-between mb-2 items-center">
+                        <span class="flex items-center gap-3 text-white font-semibold">
+                            <i data-lucide="bot" class="w-4 h-4 text-purple-400"></i> Automatización (n8n) e IA
+                        </span>
+                        <span class="text-xs text-purple-400 font-bold">Aprendiendo</span>
+                    </div>
+                    <div class="h-1.5 bg-white/5 rounded-full">
+                        <div class="progress-line h-full bg-purple-500 rounded-full" style="width: 0%" data-target="30%"></div>
+                    </div>
+                    <p class="text-[10px] text-slate-500 mt-2">Creando agentes virtuales y flujos de trabajo sencillos.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- HABILIDADES -->
-    <section id="habilidades" class="py-24 px-6 bg-white/[0.01]">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <h2 class="text-indigo-500 font-bold mb-4 uppercase tracking-widest text-sm">Competencias</h2>
-                <h3 class="text-4xl font-bold text-white">Mi Perfil Técnico</h3>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Skill 1 -->
-                <div class="reveal p-6 rounded-2xl glass border border-white/5">
-                    <div class="p-3 bg-indigo-500/10 rounded-xl text-indigo-400 w-fit mb-4"><i data-lucide="cpu"></i></div>
-                    <h4 class="text-lg font-bold mb-4 text-white">Montaje Hardware</h4>
-                    <div class="h-2 bg-white/5 rounded-full overflow-hidden">
-                        <div class="skill-bar h-full bg-gradient-to-r from-indigo-500 to-purple-500" style="width: 0%" data-target="90%"></div>
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="py-24 px-6 bg-white/[0.01]">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="reveal text-sm font-bold text-indigo-400 uppercase tracking-widest mb-12 text-center">Mi paso por el mundo real</h2>
+            
+            <div class="reveal space-y-12">
+                <div class="relative pl-8 border-l border-white/10">
+                    <div class="absolute w-3 h-3 bg-indigo-500 rounded-full -left-[6.5px] top-1 shadow-[0_0_10px_rgba(99,102,241,0.5)]"></div>
+                    <div class="mb-2">
+                        <span class="text-xs font-bold text-slate-500 bg-white/5 px-2 py-1 rounded">2024 · 2 meses</span>
                     </div>
-                </div>
-                <!-- Skill 2 -->
-                <div class="reveal p-6 rounded-2xl glass border border-white/5">
-                    <div class="p-3 bg-indigo-500/10 rounded-xl text-indigo-400 w-fit mb-4"><i data-lucide="settings"></i></div>
-                    <h4 class="text-lg font-bold mb-4 text-white">Sistemas Operativos</h4>
-                    <div class="h-2 bg-white/5 rounded-full overflow-hidden">
-                        <div class="skill-bar h-full bg-gradient-to-r from-indigo-500 to-purple-500" style="width: 0%" data-target="85%"></div>
-                    </div>
-                </div>
-                <!-- Skill 3 -->
-                <div class="reveal p-6 rounded-2xl glass border border-white/5">
-                    <div class="p-3 bg-indigo-500/10 rounded-xl text-indigo-400 w-fit mb-4"><i data-lucide="wifi"></i></div>
-                    <h4 class="text-lg font-bold mb-4 text-white">Redes Locales</h4>
-                    <div class="h-2 bg-white/5 rounded-full overflow-hidden">
-                        <div class="skill-bar h-full bg-gradient-to-r from-indigo-500 to-purple-500" style="width: 0%" data-target="80%"></div>
-                    </div>
-                </div>
-                <!-- Skill 4 -->
-                <div class="reveal p-6 rounded-2xl glass border border-white/5">
-                    <div class="p-3 bg-indigo-500/10 rounded-xl text-indigo-400 w-fit mb-4"><i data-lucide="box"></i></div>
-                    <h4 class="text-lg font-bold mb-4 text-white">Inventario Técnico</h4>
-                    <div class="h-2 bg-white/5 rounded-full overflow-hidden">
-                        <div class="skill-bar h-full bg-gradient-to-r from-indigo-500 to-purple-500" style="width: 0%" data-target="95%"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- EXPERIENCIA / PRÁCTICAS -->
-    <section id="experiencia" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 reveal">
-            <div>
-                <h2 class="text-indigo-500 font-bold mb-4 flex items-center gap-2">
-                    <i data-lucide="briefcase" class="w-5 h-5"></i> EXPERIENCIA
-                </h2>
-                <h3 class="text-4xl font-bold text-white">Trayectoria Reciente</h3>
-            </div>
-        </div>
-
-        <div class="space-y-8">
-            <!-- Item Experiencia -->
-            <div class="reveal glass p-8 rounded-3xl border border-white/5 flex flex-col md:flex-row gap-8">
-                <div class="md:w-1/4">
-                    <p class="text-indigo-400 font-bold">Prácticas (2 meses)</p>
-                    <p class="text-slate-500 text-sm">Internship</p>
-                </div>
-                <div class="md:w-3/4">
-                    <h4 class="text-2xl font-bold text-white mb-2">Técnico de Mantenimiento Informático</h4>
-                    <p class="text-lg text-slate-300 mb-4">Centro Educativo Tomás de Montañana</p>
-                    <ul class="space-y-3 text-slate-400">
-                        <li class="flex items-start gap-3"><i data-lucide="check" class="text-indigo-500 w-5 h-5 shrink-0 mt-1"></i> Mantenimiento preventivo y correctivo de equipos.</li>
-                        <li class="flex items-start gap-3"><i data-lucide="check" class="text-indigo-500 w-5 h-5 shrink-0 mt-1"></i> Instalación y configuración de diversos Sistemas Operativos.</li>
-                        <li class="flex items-start gap-3"><i data-lucide="check" class="text-indigo-500 w-5 h-5 shrink-0 mt-1"></i> Soporte técnico básico directo a usuarios del centro.</li>
-                        <li class="flex items-start gap-3"><i data-lucide="check" class="text-indigo-500 w-5 h-5 shrink-0 mt-1"></i> Organización, revisión y realización de inventario de material tecnológico.</li>
+                    <h4 class="text-xl font-bold text-white">Técnico Informático (Prácticas)</h4>
+                    <p class="text-indigo-400 font-medium mb-4">Centro Educativo Tomás de Montañana</p>
+                    <p class="text-slate-400 mb-4 italic text-sm">
+                        "Aquí fue donde pasé de la teoría a la práctica ayudando a que todo funcionara en el centro."
+                    </p>
+                    <ul class="grid sm:grid-cols-2 gap-3 text-sm text-slate-400">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-indigo-500"></i> Reparación de equipos</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-indigo-500 w-4 h-4"></i> Instalación de sistemas</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-indigo-500 w-4 h-4"></i> Ayuda directa a usuarios</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="text-indigo-500 w-4 h-4"></i> Configuración de puestos IT</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- POR QUÉ CONTRATARME -->
-    <section class="py-24 px-6">
-        <div class="max-w-7xl mx-auto glass rounded-[40px] p-8 md:p-20 overflow-hidden relative">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-600/10 blur-[100px] -z-10"></div>
-            <div class="max-w-3xl">
-                <h3 class="text-4xl md:text-5xl font-black mb-8 text-white italic">VALOR QUE APORTO</h3>
-                <div class="space-y-8">
-                    <div class="flex gap-6 items-start reveal">
-                        <div class="w-12 h-12 shrink-0 bg-indigo-600 rounded-2xl flex items-center justify-center text-white font-bold italic">01</div>
-                        <div>
-                            <h4 class="text-xl font-bold text-white mb-2">Ganas de Aprender</h4>
-                            <p class="text-slate-400">Como estudiante de 2º de SMR, tengo la teoría fresca y una motivación total para absorber nuevos flujos de trabajo.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-6 items-start reveal">
-                        <div class="w-12 h-12 shrink-0 bg-indigo-600 rounded-2xl flex items-center justify-center text-white font-bold italic">02</div>
-                        <div>
-                            <h4 class="text-xl font-bold text-white mb-2">Adaptación al Equipo</h4>
-                            <p class="text-slate-400">He aprendido a colaborar en entornos educativos y laborales, priorizando la comunicación y el orden.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-6 items-start reveal">
-                        <div class="w-12 h-12 shrink-0 bg-indigo-600 rounded-2xl flex items-center justify-center text-white font-bold italic">03</div>
-                        <div>
-                            <h4 class="text-xl font-bold text-white mb-2">Resolución de Problemas</h4>
-                            <p class="text-slate-400">Enfoque lógico ante fallos de hardware o software, buscando siempre la solución más eficiente para el usuario.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- CONTACTO -->
-    <section id="contacto" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-16">
-            <div class="reveal">
-                <h2 class="text-indigo-500 font-bold mb-4 uppercase tracking-widest text-sm">Contacto</h2>
-                <h3 class="text-5xl font-extrabold text-white mb-8">¿Hablamos sobre una oportunidad?</h3>
-                <div class="space-y-8">
-                    <div class="flex items-center gap-6">
-                        <div class="w-14 h-14 glass rounded-2xl flex items-center justify-center text-indigo-400"><i data-lucide="mail"></i></div>
-                        <div>
-                            <p class="text-xs text-slate-500 font-bold uppercase tracking-widest">Email</p>
-                            <p class="text-lg font-bold text-white">aandresyida08@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-6">
-                        <div class="w-14 h-14 glass rounded-2xl flex items-center justify-center text-indigo-400"><i data-lucide="smartphone"></i></div>
-                        <div>
-                            <p class="text-xs text-slate-500 font-bold uppercase tracking-widest">Teléfono</p>
-                            <p class="text-lg font-bold text-white">+34 655 82 99 60</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="contacto" class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="reveal glass-card rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+            <h3 class="text-3xl font-bold text-white mb-4">¿Buscando a alguien para el equipo?</h3>
+            <p class="text-slate-400 mb-10 max-w-md mx-auto">
+                Busco mi primer empleo o prácticas donde pueda aportar mis ganas de aprender y mi curiosidad por la tecnología.
+            </p>
             
-            <form class="reveal glass p-8 rounded-3xl space-y-4" action="mailto:aandresyida08@gmail.com" method="post" enctype="text/plain">
-                <div class="grid grid-cols-2 gap-4">
-                    <input type="text" placeholder="Nombre" name="nombre" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:border-indigo-500 outline-none text-white transition-all">
-                    <input type="email" placeholder="Email" name="email" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:border-indigo-500 outline-none text-white transition-all">
-                </div>
-                <input type="text" placeholder="Asunto" name="asunto" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:border-indigo-500 outline-none text-white transition-all">
-                <textarea placeholder="Tu mensaje..." name="mensaje" rows="4" class="w-full bg-white/5 border border-white/10 rounded-xl p-4 focus:border-indigo-500 outline-none text-white transition-all resize-none"></textarea>
-                <button type="submit" class="w-full py-4 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl transition-all shadow-lg shadow-indigo-600/20">
-                    Enviar Propuesta
-                </button>
-            </form>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                <a href="mailto:aandresyida08@gmail.com" class="flex items-center gap-3 text-white hover:text-indigo-400 transition-colors">
+                    <i data-lucide="mail" class="w-5 h-5 text-indigo-400"></i>
+                    aandresyida08@gmail.com
+                </a>
+                <a href="tel:+34655829960" class="flex items-center gap-3 text-white hover:text-indigo-400 transition-colors">
+                    <i data-lucide="smartphone" class="w-5 h-5 text-indigo-400"></i>
+                    +34 655 82 99 60
+                </a>
+            </div>
+
+            <div class="mt-12 flex justify-center gap-4">
+                <a href="https://www.linkedin.com/in/andres-yida-ji-lin-1948203a6/" class="p-3 glass-card rounded-full hover:bg-white/10 transition-all"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                <a href="https://github.com/centaurox4" class="p-3 glass-card rounded-full hover:bg-white/10 transition-all"><i data-lucide="github" class="w-5 h-5"></i></a>
+            </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="py-12 border-t border-white/5 text-center">
-        <p class="text-slate-500 text-sm">© <span id="year"></span> Andrés Yida Ji Lin. Diseñado para conseguir mi próximo reto profesional.</p>
+    <footer class="py-12 text-center text-slate-600 text-xs border-t border-white/5">
+        <p>© <span id="year"></span> Andrés Yida Ji Lin · Estudiante de SMR</p>
     </footer>
 
-    <!-- JAVASCRIPT -->
     <script>
-        // Inicializar iconos
+        // Iconos
         lucide.createIcons();
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Animaciones al hacer Scroll (Reveal effect)
+        // Reveal al hacer scroll
         function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             for (var i = 0; i < reveals.length; i++) {
                 var windowHeight = window.innerHeight;
                 var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 150;
+                var elementVisible = 100;
                 if (elementTop < windowHeight - elementVisible) {
                     reveals[i].classList.add("active");
                     
-                    // Si el elemento tiene barras de progreso, activarlas
-                    let bars = reveals[i].querySelectorAll('.skill-bar');
+                    // Barras de progreso
+                    let bars = reveals[i].querySelectorAll('.progress-line');
                     bars.forEach(bar => {
                         bar.style.width = bar.getAttribute('data-target');
                     });
